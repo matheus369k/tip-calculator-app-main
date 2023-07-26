@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    width: 100vw;
+    height: 100vh;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color:  hsl(185, 41%, 84%);
+
+    font-family: 'Space Mono', monospace;
+}
+
+header img{
+    margin: 20px;
+}
+
+main{
+    border-radius: 20px 20px 0px 0px;
+    padding: 30px;
+
+    background-color: white;
+    color:  hsl(183, 100%, 15%);
+}
+
+section.data-collect label{
+    font-weight: 900;
+    font-size: 1.2em;
+
+    display: block;
+    margin-bottom: 5px;
+}
+
+section.data-collect span.cifron{
+    background: url('../images/icon-dollar.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+
+    margin-left: 20px;
+    padding: 10px 3px 10px 10px;
+    margin-top: -85px;
+    float: left;
+}
+
+section.data-collect input.box{
+
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 50px;
+    padding: 10px;
+
+    font-size: 34px;
+    font-weight: 900;
+
+    background-color:hsl(189, 41%, 97%);
+    color:  hsl(183, 100%, 15%);
+
+    text-align: right;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+section.data-collect li{
+    display: inline;
+}
+
+section.data-collect button{
+    width: 150px;
+    height: 50px;
+
+    display: inline;
+    margin: 15px auto;
+    border-radius: 10px;
+
+    background-color:  hsl(183, 100%, 15%);
+    color:  hsl(0, 0%, 100%);
+
+    font-size: 1.4em;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+section.dara-collect button.custom:hover,
+section.data-collect button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color:  hsl(183, 100%, 15%);
+}
+
+section.data-collect button.custom{
+    background-color:  hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+
+    border: none;
+}
+
+section.data-collect span.people{
+    background: url('../images/icon-person.svg') no-repeat;
+    position: absolute;
+    
+    margin: 15px 0px -30px -320px;
+    padding: 30px;
+    float: left;
+}
+
+section.result{
+    background-color:  hsl(183, 100%, 15%);
+
+    border-radius: 15px;
+    padding: 15px;
+}
+
+section.result li{
+    margin-top: 20px;
+}
+
+section.result li h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1em;
+}
+
+section.result li span{
+    color: hsl(185, 41%, 84%);
+}
+
+section.result div img{
+    height: 25px;
+    margin: 0px -20px -2px 0px;
+    color:  hsl(172, 67%, 45%);
+}
+
+section.result div span{
+    color:  hsl(172, 67%, 45%);
+}
+
+section.result li div{
+    display: block;
+    text-align: right;
+    margin-top: -50px;
+
+    font-size: 2.6em;
+    font-weight: 900;
+
+    color: hsl(172, 67%, 45%);
+    
+}
+
+section.result button{
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: -30px;
+
+    font-size: 1.7em;
+    text-transform: uppercase;
+
+    color:  hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+section.result button:hover{
+    background-color:  hsl(186, 14%, 43%);
+}
+
+section.creditos{
+    background-color: white;
+    color: black;
+
+    font-weight: 700;
+    font-size: 1.2em;
+
+    margin-top: 10px;
+    text-align: center;
+}
+
+section.creditos a{
+    text-decoration:none ;
+
+    cursor: pointer;
+}
+
+section.creditos a:hover{
+    color:hsl(172, 67%, 45%);
+}

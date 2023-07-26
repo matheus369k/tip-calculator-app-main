@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -7,38 +7,62 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaQuery.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header>
+    <img src="images/logo.svg" alt="logo">
+  </header>
+  <main>
+    <section class="data-collect">  
+      <label for="ibill">Bill</label>     
+      <input class="box" type="number" name="bill" id="ibill">
+      <span class="cifron"></span>
+      <span>Select Tip %</span>
+      <ul>
+        <li><button>5%</button></li>
+        <li><button>10%</button></li>
+        <li><button>15%</button></li>
+        <li><button>25%</button></li>
+        <li><button>50%</button></li>
+        <li><button class="custom">Custom</button></li>
+      </ul>
+      <label for="ipeople">Number of People</label>
+      <input class="box" type="number" name="people" id="ipeople">
+      <span class="people"></span>
+    </section>
 
-  Bill
+    <section class="result">
+      <ul>
+        <li class="amount">
+          <h2>Tip Amount</h2>
+          <span>/ person</span>
+          <div id="amount">
+            <img src="images/icon-dollar.svg" alt="cifrão">
+            <span>00.0</span>
+          </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        </li>
+        <li class="total">
+          <h2>Total</h2>
+          <span>/ person</span>
+          <div id="total">
+            <img src="images/icon-dollar.svg" alt="cifrão">
+            <span>00.0</span>
+          </div>
+        </li>
+      </ul>
+      <button>Reset</button>
+    </section>
+  <section class="creditos">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+  </section>
+  </main>
+  <script src="js/index.js"></script>
 </body>
 </html>
