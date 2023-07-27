@@ -25,13 +25,13 @@
       <input class="box" type="number" name="bill" id="ibill">
       <span class="cifron"></span>
       <span>Select Tip %</span>
-      <ul>
-        <li><button>5%</button></li>
-        <li><button>10%</button></li>
-        <li><button>15%</button></li>
-        <li><button>25%</button></li>
-        <li><button>50%</button></li>
-        <li><button class="custom">Custom</button></li>
+      <ul onclick="amount()">
+        <li><button class="buttom off" id="5">5%</button></li>
+        <li><button class="buttom off" id="10">10%</button></li>
+        <li><button class="buttom off" id="15">15%</button></li>
+        <li><button class="buttom off" id="25">25%</button></li>
+        <li><button class="buttom off" id="50">50%</button></li>
+        <li><button id="0" class="custom buttom off">Custom</button></li>
       </ul>
       <label for="ipeople">Number of People</label>
       <input class="box" type="number" name="people" id="ipeople">
@@ -58,7 +58,7 @@
           </div>
         </li>
       </ul>
-      <button>Reset</button>
+      <button >Reset</button>
     </section>
   <section class="creditos">
       <div class="attribution">
