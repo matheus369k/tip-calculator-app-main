@@ -61,7 +61,7 @@ section.data-collect input.box{
     border-radius: 5px;
     border: none;
     margin-bottom: 50px;
-    padding: 1px;
+    
 
     font-size: 3em;
     font-weight: 900;
@@ -171,10 +171,16 @@ section.result button{
     text-transform: uppercase;
 
     color:  hsl(183, 100%, 15%);
-    background-color:  hsl(186, 14%, 43%);
+    
 }
 
-button.on{
+button.off-reset{
+    background-color:  hsl(186, 14%, 43%);
+    border: none;
+}
+
+button.on-reset{
+    cursor: pointer;
     background-color:  hsl(172, 67%, 45%);
 }
 

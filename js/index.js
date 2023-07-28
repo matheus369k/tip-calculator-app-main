@@ -1,23 +1,25 @@
 const conta = document.querySelector('#ibill');
 const people = document.getElementById('ipeople');
+const buttomReset = document.getElementById('reset');
 
 function tip(){
     const porcentos = document.querySelectorAll('.buttom');
     porcentos.forEach(porcento =>
         porcento.addEventListener('click', () => {
-
+            
             const verif = document.querySelector('.on');
-            if (verif != null){
+            if (verif != null){                
                 verif.classList.replace('on','off')
             }
-            
-            porcento.classList.replace('off','on') 
-            
-        })
+            porcento.classList.replace('off','on')
+        })  
     )
+    
 }
 
 function amount(){
+    buttomReset.classList.add('on-reset')
+
     let active = document.querySelector('.on');
     let contaValue = Number(conta.value)
     let peopleValue = Number(people.value)
@@ -32,9 +34,7 @@ function amount(){
 
         msgAmount.innerHTML = `${calc.toFixed(2)}`
     
-        return calc
-    
-        
+        return calc      
     }
 
 }
@@ -44,7 +44,6 @@ function total(){
     let contaValue = Number(conta.value)
     let peopleValue = Number(people.value)
 
-    console.log(amount());
 
     if (amount() != undefined){
         let amountValue = Number(amount())
@@ -53,4 +52,12 @@ function total(){
 
         msgTotal.innerHTML = `${calc.toFixed(2)}`}
 
+}
+
+function reset(){
+    const reset = document.querySelector('.on-reset');
+    if (reset != null){
+        reset.addEventListener('click', () => {
+        location.reload();
+    })}
 }
