@@ -22,10 +22,10 @@
   <main>
     <section class="data-collect">  
       <label for="ibill">Bill</label>     
-      <input class="box" type="number" name="bill" id="ibill">
+      <input oninput="amount(), total()" class="box" type="number" name="bill" id="ibill">
       <span class="cifron"></span>
       <span>Select Tip %</span>
-      <ul onclick="amount()">
+      <ul onclick="tip(), amount(), total()">
         <li><button class="buttom off" id="5">5%</button></li>
         <li><button class="buttom off" id="10">10%</button></li>
         <li><button class="buttom off" id="15">15%</button></li>
@@ -34,7 +34,7 @@
         <li><button id="0" class="custom buttom off">Custom</button></li>
       </ul>
       <label for="ipeople">Number of People</label>
-      <input class="box" type="number" name="people" id="ipeople">
+      <input oninput="amount(), total()" class="box" type="number" name="people" id="ipeople">
       <span class="people"></span>
     </section>
 
@@ -43,18 +43,18 @@
         <li class="amount">
           <h2>Tip Amount</h2>
           <span>/ person</span>
-          <div id="amount">
+          <div>
             <img src="images/icon-dollar.svg" alt="cifrão">
-            <span>00.0</span>
+            <span id="amount">00.0</span>
           </div>
 
         </li>
         <li class="total">
           <h2>Total</h2>
           <span>/ person</span>
-          <div id="total">
+          <div>
             <img src="images/icon-dollar.svg" alt="cifrão">
-            <span>00.0</span>
+            <span id="total">00.0</span>
           </div>
         </li>
       </ul>
@@ -67,6 +67,7 @@
       </div>
   </section>
   </main>
-  <script src="js/index.js"></script>
+  <script src="js/index.js">
+  </script>
 </body>
 </html>
