@@ -1,6 +1,8 @@
 const conta = document.querySelector('#ibill');
 const people = document.getElementById('ipeople');
 const buttomReset = document.getElementById('reset');
+const inputCustom = document.querySelector('#icustom');
+
 
 function tip(){
     const porcentos = document.querySelectorAll('.buttom');
@@ -8,10 +10,28 @@ function tip(){
         porcento.addEventListener('click', () => {
             
             const verif = document.querySelector('.on');
+            const buttomCustom = document.querySelector('.custom');
+
             if (verif != null){                
                 verif.classList.replace('on','off')
             }
+            
             porcento.classList.replace('off','on')
+
+            console.log(porcento);
+            
+            if (porcento == buttomCustom || porcento == inputCustom){
+                                
+                inputCustom.classList.replace('custom-off','custom-on')
+                buttomCustom.classList.replace('custom-on','custom-off')
+                inputCustom.classList.replace('off','on')   
+
+            }else{
+                inputCustom.classList.replace('custom-on','custom-off')
+                buttomCustom.classList.replace('custom-off','custom-on')
+                inputCustom.value = ''
+            }
+            
         })  
     )
     
@@ -20,7 +40,8 @@ function tip(){
 function amount(){
     buttomReset.classList.add('on-reset')
 
-    let active = document.querySelector('.on');
+    const active = document.querySelector('.on');
+
     let contaValue = Number(conta.value)
     let peopleValue = Number(people.value)
 
@@ -28,13 +49,19 @@ function amount(){
 
     if (peopleValue != '' && contaValue != '' && active != null){
 
-        let porcentoId = Number(active.attributes.id.value)
+        if (active == inputCustom){
+            var porcValue = Number(inputCustom.value)
+            
+        }else{
+            var porcValue = Number(active.attributes.id.value)
+        }
 
-        let calc = ((contaValue*porcentoId)/100)/peopleValue
+        let calc = ((contaValue*porcValue)/100)/peopleValue
 
         msgAmount.innerHTML = `${calc.toFixed(2)}`
-    
-        return calc      
+        
+        return calc
+        
     }
 
 }

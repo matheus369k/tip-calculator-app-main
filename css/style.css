@@ -82,8 +82,8 @@ section.data-collect li{
 }
 
 section.data-collect button{
-    width: 45%;
-    height: 15vw;
+    width: 160px;
+    height: 60px;
 
     display: inline;
     margin:2vw 1.5vw auto;
@@ -98,10 +98,12 @@ section.data-collect button{
     cursor: pointer;
 }
 
-section.dara-collect button.on,
+section.data-collect input.on,
+section.data-collect button.on,
 section.data-collect button.on{
     background-color: hsl(172, 67%, 45%);
     color:  hsl(183, 100%, 15%);
+    text-shadow: 1px 1px 0px rgb(167, 161, 161);
 }
 
 section.data-collect button.custom{
@@ -110,6 +112,38 @@ section.data-collect button.custom{
 
     border: none;
 }
+
+section.data-collect input.custom-off,
+section.data-collect button.custom-off{
+    display: none;
+}
+
+section.data-collect input.custom-on{
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    float: right;
+    margin: -60px 50px auto;
+
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.699);
+    border: 1px solid black;
+
+    font-size: 1.8em;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+section.data-collect input.off{
+    color: hsl(189, 41%, 97%);
+    background-color:  hsl(183, 100%, 15%);
+}
+
 
 section.data-collect span.people{
     background: url('../images/icon-person.svg') no-repeat;

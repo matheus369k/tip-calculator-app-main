@@ -34,6 +34,7 @@
         margin: 20px 0px;
     }
 
+    section.data-collect input.custom-on,
     section.data-collect button{
         width: 167px;
         height: 65px;

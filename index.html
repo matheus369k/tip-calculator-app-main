@@ -25,13 +25,16 @@
       <input oninput="amount(), total()" class="box" type="number" name="bill" id="ibill">
       <span class="cifron"></span>
       <span>Select Tip %</span>
-      <ul onclick="tip(), amount(), total()">
+      <ul onmouseenter="tip()" onclick="amount(), total()">
         <li><button class="buttom off" id="5">5%</button></li>
         <li><button class="buttom off" id="10">10%</button></li>
         <li><button class="buttom off" id="15">15%</button></li>
         <li><button class="buttom off" id="25">25%</button></li>
         <li><button class="buttom off" id="50">50%</button></li>
-        <li><button id="0" class="custom buttom off">Custom</button></li>
+        <li>
+          <button class="custom buttom custom-on">Custom</button>
+          <input aria-controls="hidde" oninput="amount(), total()" class="buttom custom-off off" type="number" name="custom" id="icustom">
+        </li>
       </ul>
       <label for="ipeople">Number of People</label>
       <input oninput="amount(), total()" class="box" type="number" name="people" id="ipeople">
@@ -58,7 +61,7 @@
           </div>
         </li>
       </ul>
-      <button onclick="reset()" id="reset" class="off-reset" >Reset</button>
+      <button onmouseenter="reset()" id="reset" class="off-reset" >Reset</button>
     </section>
   <section class="creditos">
       <div class="attribution">
