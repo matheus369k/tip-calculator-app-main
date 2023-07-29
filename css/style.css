@@ -82,11 +82,11 @@ section.data-collect li{
 }
 
 section.data-collect button{
-    width: 160px;
+    width: 155px;
     height: 60px;
 
     display: inline;
-    margin:2vw 1.5vw auto;
+    margin:10px 5px auto;
     border-radius: 10px;
 
     background-color:  hsl(183, 100%, 15%);
@@ -119,7 +119,7 @@ section.data-collect button.custom-off{
 }
 
 section.data-collect input.custom-on{
-    width: 160px;
+    width: 155px;
     height: 60px;
     border-radius: 10px;
     text-align: center;
