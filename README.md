@@ -48,5 +48,10 @@ Esse projeto ao foi adaptado para dois tipos de tela, sendo para  🖥️desktop
 ### __*Javascript*__
 ![2023-08-13-155203_1024x600_scrot](https://github.com/matheus369k/tip-calculator-app-main/assets/47065962/4e352f8f-e9ac-4714-aad2-8750c9538800)
 
-A ```function tip(){}``` tem como foco a identificação da porcentagem selecionada.
+A ```function tip(){}``` tem como foco a identificação da porcentagem selecionada, tendo também a função de substituir o botão custom por uma tag ```<input type="number">``` para customizar a porcentagem a ser usada.
+
 ![2023-08-13-160047_1024x600_scrot](https://github.com/matheus369k/tip-calculator-app-main/assets/47065962/75644415-58c9-4451-a8e3-7331850a03fb)
+
+A ```function amount(){}``` tem como objetivo calcular a quantia ou amount a ser mostrado, sendo também responsável pela ativação do botão reset.
+
+
