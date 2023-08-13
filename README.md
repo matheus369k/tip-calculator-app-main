@@ -47,3 +47,5 @@ Esse projeto ao foi adaptado para dois tipos de tela, sendo para  🖥️desktop
 
 ### __*Javascript*__
 ![2023-08-13-155203_1024x600_scrot](https://github.com/matheus369k/tip-calculator-app-main/assets/47065962/4e352f8f-e9ac-4714-aad2-8750c9538800)
+
+A ```function tip(){}``` tem como foco a identificação da porcentagem selecionada.
