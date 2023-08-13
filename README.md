@@ -40,3 +40,4 @@ flex-direction:column
 justify-content:center;
 align-items:center;
 ```
+![2023-08-13-153659_1024x600_scrot](https://github.com/matheus369k/tip-calculator-app-main/assets/47065962/bcf5593e-78d4-4ba6-81bd-f4e1f786572f)
