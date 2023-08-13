@@ -8,6 +8,9 @@
 ***
 - [Linguagens utilizadas](#linguagens-utilizadas)
 - [Codigos](#codigos)
+    - [HTML5](#html5)
+    - [CSS](#css)
+    - [Javascript](#javascript)
 
 
 ## 🧰Linguagens utilizadas
@@ -20,8 +23,7 @@
 ## 📇Codigos
 ***
 
-__*HTML5*__
-***
+### __*HTML5*__
 ![2023-08-13-150939_1024x600_scrot](https://github.com/matheus369k/tip-calculator-app-main/assets/47065962/c2d206a9-00e6-41e4-80c3-ededcb406861)
 
 Essa parte do html e respectivamente responsavel pela coleta do valor total e escolha da porcentagem...
@@ -31,8 +33,7 @@ Essa parte do html e respectivamente responsavel pela coleta do valor total e es
 Sendo responsável pela demonstração dos
 valores obtidos, sendo o valor percentual tanto tambem o valor total.
 
-__*CSS*__
-***
+### __*CSS*__
 Forma de alinhamento principalmente utilizadas foi 
 ```
 display-flex:flex:
@@ -40,4 +41,8 @@ flex-direction:column
 justify-content:center;
 align-items:center;
 ```
+Esse projeto ao foi adaptado para dois tipos de tela, sendo para  🖥️desktop e 📱mobile.
+
 ![2023-08-13-153659_1024x600_scrot](https://github.com/matheus369k/tip-calculator-app-main/assets/47065962/bcf5593e-78d4-4ba6-81bd-f4e1f786572f)
+
+### __*Javascript*__
