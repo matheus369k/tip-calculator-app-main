@@ -11,6 +11,9 @@
     - [HTML5](#html5)
     - [CSS](#css)
     - [Javascript](#javascript)
+- [Licença](#licença)
+- [Participantes](participantes)
+- [Agradecimento](#agradecimento)
 
 
 ## 🧰Linguagens utilizadas
@@ -22,7 +25,6 @@
 
 ## 📇Codigos
 ***
-
 ### __*HTML5*__
 ![2023-08-13-150939_1024x600_scrot](https://github.com/matheus369k/tip-calculator-app-main/assets/47065962/c2d206a9-00e6-41e4-80c3-ededcb406861)
 
@@ -56,3 +58,23 @@ A ```function amount(){}``` tem como objetivo calcular a quantia ou amount a ser
 
 ![2023-08-13-161308_1024x600_scrot](https://github.com/matheus369k/tip-calculator-app-main/assets/47065962/9533ba0e-0585-47de-9ddf-952f92263ddf)
 
+A ```function total(){}``` como o próprio noma ja dix rla calcula o total ao todo que foi gastado.
+
+A ```function reset(){}``` tem como propósito atualizar a página e limpar tudo que esta inserido no site.
+
+
+## 📄Licença
+***
+A licença utilizada MIT - veja [LICENÇA](/LICENSE).
+
+
+## 🖌️Participantes 
+***
+__*💻Desenvolvedor*__ - @Matheus369k
+
+__*🖼️Designer*__ - Frontend Mentor
+
+
+## 🎁Agradecimento
+***
+Agradeço por sua visata, sentasse a vontade para compartilhar e apresentar ideias para melhorá-lo.
