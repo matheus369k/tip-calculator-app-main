@@ -54,4 +54,5 @@ A ```function tip(){}``` tem como foco a identificação da porcentagem selecion
 
 A ```function amount(){}``` tem como objetivo calcular a quantia ou amount a ser mostrado, sendo também responsável pela ativação do botão reset.
 
+![2023-08-13-161308_1024x600_scrot](https://github.com/matheus369k/tip-calculator-app-main/assets/47065962/9533ba0e-0585-47de-9ddf-952f92263ddf)
 
