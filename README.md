@@ -12,16 +12,14 @@
     - [CSS](#css)
     - [Javascript](#javascript)
 - [Licença](#licença)
-- [Participantes](participantes)
+- [Participantes](#participantes)
 - [Agradecimento](#agradecimento)
-
 
 ## 🧰Linguagens utilizadas
 ***
 - HTML5
 - CSS
 - JavaScript
-
 
 ## 📇Codigos
 ***
@@ -62,18 +60,15 @@ A ```function total(){}``` como o próprio noma ja dix rla calcula o total ao to
 
 A ```function reset(){}``` tem como propósito atualizar a página e limpar tudo que esta inserido no site.
 
-
 ## 📄Licença
 ***
 A licença utilizada MIT - veja [LICENÇA](/LICENSE).
 
-
-## 🖌️Participantes 
+## 📝Participantes
 ***
 __*💻Desenvolvedor*__ - @Matheus369k
 
 __*🖼️Designer*__ - Frontend Mentor
-
 
 ## 🎁Agradecimento
 ***
