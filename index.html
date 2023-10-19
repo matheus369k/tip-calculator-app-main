@@ -2,14 +2,14 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/mediaQuery.css">
+  <link rel="stylesheet" href="css/responsive.css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,99 +28,112 @@
   <main>
 
     <section class="data-collect"> 
-
+<!---onchange="amount(), total()"---> 
       <label for="ibill">Bill</label> 
+      <input 
+      oninput="GetValue()"
+      class="bill" 
+      type="number" 
+      name="bill" 
+      id="ibill">
 
-      <input oninput="amount(), total()" class="box" type="number" name="bill" id="ibill">
-
-      <span class="cifron"></span>
-
-      <span>Select Tip %</span>
-
-      <ul onmouseenter="tip()" onclick="amount(), total()">
-
-        <li><button class="buttom off" id="5">5%</button></li>
-
-        <li><button class="buttom off" id="10">10%</button></li>
-
-        <li><button class="buttom off" id="15">15%</button></li>
-
-        <li><button class="buttom off" id="25">25%</button></li>
-
-        <li><button class="buttom off" id="50">50%</button></li>
+      <img class="cifron" src="./images/icon-dollar.svg" />
+      <span class="sel_Tip">Select Tip %</span>
+<!--onmouseenter="tip()" onclick="amount(), total()"--->
+      <ul>
 
         <li>
-          <button class="custom buttom custom-on">Custom</button>
-
-          <input aria-controls="hidde" oninput="amount(), total()" class="buttom custom-off off" type="number" name="custom" id="icustom">
-
+          <button class="buttons off" id="5">5%</button>
         </li>
 
+        <li>
+          <button class="buttons off" id="10">10%</button>
+        </li>
+
+        <li>
+          <button class="buttons off" id="15">15%</button>
+        </li>
+
+        <li>
+          <button class="buttons off" id="25">25%</button>
+        </li>
+
+        <li>
+          <button class="buttons off" id="50">50%</button>
+        </li>
+
+        <li>
+          <button 
+          class="custom buttons">
+            Custom  
+          </button>
+          
+          <!--
+          <input 
+          oninput="amount(), total()"
+          class="buttom custom-off off" 
+          type="number" 
+          name="custom" 
+          id="icustom">--->
+        </li>
       </ul>
 
-      <label for="ipeople">Number of People</label>
+      <label 
+      for="ipeople">
+        Number of People
+      </label>
+      <!--oninput="amount(), total()" --->
+      <input 
+      oninput="GetValue()"
+      class="people" 
+      type="number" 
+      name="people" 
+      id="ipeople">
 
-      <input oninput="amount(), total()" class="box" type="number" name="people" id="ipeople">
-
-      <span class="people"></span>
-
+      <img class="people" src="./images/icon-person.svg" />
     </section>
 
+    
     <section class="result">
 
       <ul>
-
         <li class="amount">
-
-          <h2>Tip Amount</h2>
-
+          <h3>Tip Amount</h3>
           <span>/ person</span>
-
-          <div>
-
-            <img src="images/icon-dollar.svg" alt="cifrão">
-
-            <span id="amount">00.0</span>
-
-          </div>
-
+          <img src="./images/icon-dollar-green.svg" alt="cifrão">
+          <div id="amount">00.0</div>
         </li>
 
         <li class="total">
-
-          <h2>Total</h2>
-
+          <h3>Total</h3>
           <span>/ person</span>
-
-          <div>
-
-            <img src="images/icon-dollar.svg" alt="cifrão">
-
-            <span id="total">00.0</span>
-
-          </div>
-
+          <img src="./images/icon-dollar-green.svg" alt="cifrão">
+          <div id="total">00.0</div>
         </li>
-
       </ul>
 
-      <button onmouseenter="reset()" id="reset" class="off-reset" >Reset</button>
+      <!--onmouseenter="reset()"--->
+      <button 
+      id="reset" 
+      class="off-reset" >
+        Reset
+      </button>
 
     </section>
 
-  <section class="creditos">
+  </main>
+
+  <footer>
 
       <div class="attribution">
 
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="https://github.com/matheus369k">Matheus369k</a>.
 
       </div>
 
-  </section>
-
-  </main>
+  </footer>
 
   <script src="js/index.js">
 

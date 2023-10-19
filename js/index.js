@@ -1,4 +1,4 @@
-const conta = document.querySelector('#ibill');
+/*const conta = document.querySelector('#ibill');
 const people = document.getElementById('ipeople');
 const buttomReset = document.getElementById('reset');
 const inputCustom = document.querySelector('#icustom');
@@ -87,4 +87,48 @@ function reset(){
         reset.addEventListener('click', () => {
         location.reload();
     })}
+}*/
+
+
+function GetValue(custom){
+    const people = document.querySelector(".people").value;
+    const bill = document.querySelector(".bill").value;
+    if (custom==1){
+        const customButtom = document.getElementById("custom").value;
+        console.log(GetValue()[2]);
+        return value =[people, bill, customButtom]
+
+    } else {
+        return value =[people, bill]
+    }
 }
+
+
+document.querySelectorAll(".buttons").forEach(button => {
+    button.addEventListener('click', ()=>{
+
+        if(button==document.querySelector(".custom")){
+           const input = document.createElement("input");
+
+           input.setAttribute("oninput","GetValue(1)");
+           input.setAttribute("class", "buttons");
+           input.setAttribute("id", "custom")
+           input.setAttribute("type", "number");
+
+           const li = button.parentNode;
+           li.replaceChild(input, button);
+           
+        }
+        
+        const porcent = button.attributes.id.value
+
+        let amount =  ((porcent*GetValue()[1])/100)/GetValue()[0];
+        let total = (GetValue()[1]/GetValue()[0] + amount);
+
+        document.getElementById("total").innerHTML=`${total.toFixed(2)}`;
+        document.getElementById("amount").innerHTML=`${amount.toFixed(2)}`;
+        
+    })
+});
+
+

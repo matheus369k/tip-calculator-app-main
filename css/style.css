@@ -2,246 +2,222 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-html{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-body{
-    width: 100vw;
-    height: 100vh;
-    max-width: 400px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background-color:  hsl(185, 41%, 84%);
-
-    font-family: 'Space Mono', monospace;
-}
-
-header img{
-    margin: 20px;
-    width: 30vw;
-}
-
-main{
-    border-radius: 20px 20px 0px 0px;
-    padding: 30px;
-
-    background-color: white;
-    color:  hsl(183, 100%, 15%);
-}
-
-section.data-collect label{
-    font-weight: 900;
-    font-size: 1.2em;
-
-    display: block;
-    margin-bottom: 5px;
-}
-
-section.data-collect span.people,
-section.data-collect span.cifron{
-    
-    display: block;
-    text-align: left;
-    position: absolute;
-
-    margin-left: 20px;
-    padding: 10px 3px 10px 10px;
-    margin-top: -85px;
-    float: left;
-}
-
-section.data-collect input.box{
-
-    height: 50px;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 50px;
-    
-
-    font-size: 3em;
-    font-weight: 900;
-
-    background-color:hsl(189, 41%, 97%);
-    color:  hsl(183, 100%, 15%);
-
-    text-align: right;
-}
-
-ul{
     list-style: none;
-    margin-bottom: 50px;
+    /*border: 1px solid red;*/
 }
 
-section.data-collect li{
-    display: inline;
+input{
+    box-shadow: none;
+    outline: 0;
 }
 
-section.data-collect button{
-    width: 140px;
-    height: 60px;
-
-    display: inline;
-    margin:10px;
-    border-radius: 10px;
-
-    background-color:  hsl(183, 100%, 15%);
-    color:  hsl(0, 0%, 100%);
-
-    font-size: 1.4em;
-    font-weight: 900;
-
-    cursor: pointer;
-}
-
-section.data-collect input.on,
-section.data-collect button.on,
-section.data-collect button.on{
-    background-color: hsl(172, 67%, 45%);
-    color:  hsl(183, 100%, 15%);
-    text-shadow: 1px 1px 0px rgb(167, 161, 161);
-}
-
-section.data-collect button.custom{
-    background-color:  hsl(189, 41%, 97%);
-    color: hsl(183, 100%, 15%);
-
-    border: none;
-}
-
-section.data-collect input.custom-off,
-section.data-collect button.custom-off{
-    display: none;
-}
-
-section.data-collect input.custom-on{
-    width: 140px;
-    height: 60px;
-    border-radius: 10px;
-    text-align: center;
-    float: right;
-    margin: 20px 20px 0px 0px;
-
-    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.699);
-    border: 1px solid black;
-
-    font-size: 1.8em;
-    font-weight: 900;
-
-    cursor: pointer;
-}
-
-input[type="number"]::-webkit-inner-spin-button{
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-section.data-collect input.off{
-    color: hsl(189, 41%, 97%);
-    background-color:  hsl(183, 100%, 15%);
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+/*
+font-family: 'Space Mono', monospace;
+*/
+
+:root {
+ --color-hovercyan:hsl(172, 67%, 45%);
+
+ --color-Verydark: hsl(183, 100%, 15%);
+ --color-Darkgrayish: hsl(186, 14%, 43%);
+ --color-Grayish: hsl(184, 14%, 56%);
+ --color-Lightgrayish: hsl(185, 41%, 84%);
+ --color-Verylightgrayish: hsl(189, 41%, 97%);
+ --color--White: hsl(0, 0%, 100%);
 }
 
-
-section.data-collect span.people{
-    background: url('../images/icon-person.svg') no-repeat;
+html,
+body {
+    background-color: var(--color-Lightgrayish);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-section.data-collect span.cifron{
-    background: url('../images/icon-dollar.svg') no-repeat;
+header {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-section.result{
-    background-color:  hsl(183, 100%, 15%);
-
-    border-radius: 15px;
-    padding: 15px;
+main {
+    background-color: var(--color--White);
+    border-radius: 20px 20px 0 0 ;
+    padding: 50px;
+    padding-bottom: 10px;
 }
 
-section.result li{
+.data-collect{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35px;
+}
+
+.data-collect label {
+    font-size: 18px;
+    color: var(--color-Darkgrayish);
+}
+
+.data-collect input {
+    font-weight: bold;
+    color: var(--color-Verydark);
+    padding: 0 50px;
+    font-size: 1.6em;
+    height: 60px;
+    border: none;
+    background-color: var(--color-Verylightgrayish);
+    border-radius: 8px;
+}
+
+.data-collect img {
+    width: 15px;
+    margin-top: -42px;
+    margin-left: 15px;
+}
+
+.data-collect .sel_Tip {
+    font-size: 20px;
+    color: var(--color-Darkgrayish);
+    margin-top: 30px;
+}
+
+.data-collect ul {
+    display: grid;
+    margin-left: -10px;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 20px;
+}
+
+.data-collect .buttons,
+.data-collect button{
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.393);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: var(--color--White);
+    background-color: var(--color-Verydark);
+    width: 95%;
+    height: 50px;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.data-collect button:hover {
+    transform: scale(1.01);
+    transition: .5s;
+    background-color: var(--color-hovercyan);
+}
+
+.data-collect .custom {
+    font-weight: bold;
+    box-shadow: none;
+    background-color: var(--color-Verylightgrayish);
+    color: var(--color-Grayish);
+}
+
+.data-collect .custom:hover {
+    background-color: var(--color-Verylightgrayish);
+}
+
+.result {
     margin-top: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: var(--color-Verydark);
+    color: var(--color--White);
 }
 
-section.result li h2{
-    color: hsl(0, 0%, 100%);
-    font-size: 1.1em;
+.result ul { 
+    display: flex;
+    flex-direction: column;
 }
 
-section.result li span{
-    color: hsl(185, 41%, 84%);
+.result .total,
+.result .amount {
+    display: grid;
+    grid-template-rows: min-content 70px;
+    grid-template-columns: 50% auto;
 }
 
-section.result div img{
-    height: 25px;
-    margin: 0px -20px -2px 0px;
-    color:  hsl(172, 67%, 45%);
+.result .total h3,
+.result .amount h3{ 
+    font-size: 16px;  
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
 }
 
-section.result div span{
-    color:  hsl(172, 67%, 45%);
+.result .total span,
+.result .amount span {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    font-size: 15px;
+    color: var(--color-Darkgrayish);
 }
 
-section.result li div{
-    display: block;
+.result .total img,
+.result .amount img {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    width: 30px;
+    margin-top: 15px;
+    padding-right: 5px;
+}
+
+.result .total div,
+.result .amount div {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 2em;
     text-align: right;
-    margin-top: -50px;
-
-    font-size: 2.6em;
-    font-weight: 900;
-
-    color: hsl(172, 67%, 45%);
-    
+    color: var(--color-hovercyan);
 }
 
-section.result button{
+.result button {
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.667);
+    margin-top: 20px;
     width: 100%;
     height: 60px;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: var(--color-hovercyan);
+    color: var(--color-Verydark);
     border-radius: 10px;
-    margin-top: -30px;
-
-    font-size: 1.7em;
-    text-transform: uppercase;
-
-    color:  hsl(183, 100%, 15%);
-    
 }
 
-button.off-reset{
-    background-color:  hsl(186, 14%, 43%);
-    border: none;
+footer{
+    background-color: var(--color--White);
 }
 
-button.on-reset{
-    cursor: pointer;
-    background-color:  hsl(172, 67%, 45%);
-}
-
-section.creditos{
-    background-color: white;
-    color: black;
-
-    font-weight: 700;
-    font-size: 1.2em;
-
-    margin-top: 10px;
+footer div {
+    font-size: .6em;
     text-align: center;
+    color: var(--color-Darkgrayish);
 }
 
-section.creditos a{
-    text-decoration:none ;
-
-    cursor: pointer;
+footer a {
+    text-decoration: none;
+    color: var(--color-Lightgrayish);
 }
 
-section.creditos a:hover{
-    color:hsl(172, 67%, 45%);
+footer a:hover {
+    color: var(--color-hovercyan);
 }
