@@ -15,7 +15,7 @@
     }
 
     
-    .data-collect .buttons,
+    .data-collect input#custom,
     .result button ,
     .data-collect input,
     .data-collect button {
@@ -83,7 +83,7 @@
 
     main {
         padding: 0 20px 20px;
-        max-height: 768px;
+        max-height: 868px;
         width: 1024px;
     }
 
@@ -92,7 +92,7 @@
         padding: 20px 50px;
     }
 
-    .data-collect .buttons,
+    .data-collect input#custom,
     .data-collect button {
         height: 65px;
     }

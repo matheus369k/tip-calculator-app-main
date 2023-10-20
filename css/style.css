@@ -81,6 +81,21 @@ main {
     border-radius: 8px;
 }
 
+.data-collect span.porcent {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 58px;
+    right: 24px;
+    float: right;
+    font-weight: bolder;
+    font-size: 1em;
+    margin-bottom: -58px;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
 .data-collect img {
     width: 15px;
     margin-top: -42px;
@@ -100,7 +115,7 @@ main {
     margin-bottom: 20px;
 }
 
-.data-collect .buttons,
+.data-collect input#custom,
 .data-collect button{
     border: none;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.393);
@@ -115,21 +130,30 @@ main {
     margin: 10px;
 }
 
-.data-collect button:hover {
-    transform: scale(1.01);
-    transition: .5s;
+.data-collect input#custom {
+    text-align: right;
     background-color: var(--color-hovercyan);
 }
 
-.data-collect .custom {
+.data-collect button:hover {
+    transform: scale(1.01);
+    transition: .5s;
+    background-color: hsl(172, 52%, 36%);
+}
+
+.data-collect button#custom {
     font-weight: bold;
     box-shadow: none;
     background-color: var(--color-Verylightgrayish);
     color: var(--color-Grayish);
 }
 
-.data-collect .custom:hover {
+.data-collect button#custom:hover {
     background-color: var(--color-Verylightgrayish);
+}
+
+.data-collect .active {
+    background-color: var(--color-hovercyan);
 }
 
 .result {
@@ -147,9 +171,10 @@ main {
 
 .result .total,
 .result .amount {
+    width: 100%;
     display: grid;
-    grid-template-rows: min-content 70px;
-    grid-template-columns: 50% auto;
+    grid-template-rows: 20px 70px;
+    grid-template-columns: auto min-content min-content;
 }
 
 .result .total h3,
@@ -164,6 +189,7 @@ main {
 .result .total span,
 .result .amount span {
     grid-row-start: 2;
+    grid-row-end: 2;
     grid-column-start: 1;
     font-size: 15px;
     color: var(--color-Darkgrayish);
@@ -172,8 +198,8 @@ main {
 .result .total img,
 .result .amount img {
     grid-row-start: 1;
-    grid-column-start: 3;
-    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-row-end: 2;
     width: 30px;
     margin-top: 15px;
     padding-right: 5px;
@@ -183,7 +209,7 @@ main {
 .result .amount div {
     grid-column-start: 3;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 4;
     font-size: 2em;
     text-align: right;
     color: var(--color-hovercyan);
@@ -197,7 +223,7 @@ main {
     width: 100%;
     height: 60px;
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: bold;
     background-color: var(--color-hovercyan);
     color: var(--color-Verydark);
     border-radius: 10px;
