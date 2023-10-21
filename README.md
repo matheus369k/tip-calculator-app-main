@@ -19,4 +19,4 @@ Na verificação de possiveis dados que possam prejudicar o calculo EXP: numeros
 ![6666](https://github.com/matheus369k/tip-calculator-app-main/assets/47065962/a12a7eff-6dfa-4758-a2e0-edf431630f77)</div>
 Para mais informações do arquivo Js Acesse aqui - [index.js](./js/index.js)
 ## 📃Licence
-Licença Aderida ( MIT ) - veja [LICENCE](./LICENCE)
+Licença Aderida ( MIT ) - veja [LICENCE](./LICENSE)
