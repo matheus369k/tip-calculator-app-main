@@ -55,7 +55,7 @@ header {
 main {
     background-color: var(--color--White);
     border-radius: 20px 20px 0 0 ;
-    padding: 50px;
+    padding: 30px 10px;
     padding-bottom: 10px;
 }
 
@@ -79,21 +79,6 @@ main {
     border: none;
     background-color: var(--color-Verylightgrayish);
     border-radius: 8px;
-}
-
-.data-collect span.porcent {
-    display: none;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    bottom: 58px;
-    right: 24px;
-    float: right;
-    font-weight: bolder;
-    font-size: 1em;
-    margin-bottom: -58px;
-    padding: 0;
-    color: rgb(255, 255, 255);
-    z-index: 1;
 }
 
 .data-collect img {
@@ -125,9 +110,24 @@ main {
     color: var(--color--White);
     background-color: var(--color-Verydark);
     width: 95%;
-    height: 50px;
-    font-size: 24px;
+    height: 80px;
+    font-size: 34px;
     margin: 10px;
+}
+
+.data-collect span.porcent {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 78px;
+    right: 15px;
+    float: right;
+    font-weight: bolder;
+    font-size: 1.6em;
+    margin-bottom: -58px;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    z-index: 1;
 }
 
 .data-collect input#custom {
@@ -154,6 +154,26 @@ main {
 
 .data-collect .active {
     background-color: var(--color-hovercyan);
+}
+
+.data-collect .msg {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px 20px 35px;
+    z-index: 1;
+    width: 375px;
+    height: auto;
+    border: 1px solid var(--color--White);
+    border-radius: 10px;
+    color: var(--color-hovercyan);
+    box-shadow: 0 0 10px 5px var(--color-Darkgrayish);
+    background-color: var(--color-Verydark);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: .8em;
 }
 
 .result {

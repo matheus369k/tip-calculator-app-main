@@ -1,4 +1,15 @@
-@media (min-width: 558px) and (max-width: 868px) {
+@media (max-width: 400px) {
+    main {
+        padding: 5px 20px;
+    }
+
+    .data-collect input#custom{
+        padding-left: 10px;
+    }
+}
+
+
+@media (min-width: 558px) and (min-height: 993px) {
     body{
         height: 100vh;
         display: flex;
@@ -14,13 +25,20 @@
         width: 100px;
     }
 
-    
-    .data-collect input#custom,
-    .result button ,
-    .data-collect input,
-    .data-collect button {
-        height: 70px;
-        font-size: 1.5em;
+    .data-collect input {
+        height: 65px;
+        font-size: 1.6em;
+    }
+
+    .result button,
+    .data-collect button,
+    .data-collect input#custom{
+        height: 80px;
+        font-size: 1.2em;
+    }
+
+    .data-collect span.porcent{
+        bottom: 76px;
     }
 
     .data-collect img {
@@ -29,6 +47,7 @@
     }
 
     main{
+        padding: 40px 25px;
         width: 525px;
     }
 
@@ -38,7 +57,7 @@
     
 }
 
-@media (min-width: 869px) {
+@media (min-width: 869px) and (max-height: 1124px) {
     main {
         padding: 0px;
         padding-bottom: 0px;
@@ -55,6 +74,25 @@
         min-width: 300px;
     }
 
+    .data-collect span.porcent {
+        font-size: 1em;
+        bottom: 60px;
+        right: 22px;
+    }
+
+    .data-collect input#custom{
+        font-size: 1.1em;
+        padding-left: 5px;
+    }
+
+    
+    .result button,
+    .data-collect button,
+    .data-collect input#custom{
+        height: 70px;
+        font-size: 1.1em;
+    }
+
     .data-collect ul {
         grid-template-columns:  33% 33% 33%;
     }
@@ -62,7 +100,7 @@
     .result {
         border-radius: 20px;
         height: 95%;
-        min-width: 420px;
+        min-width: 400px;
     }
 
     .result button {
@@ -74,7 +112,7 @@
     }
 }
 
-@media (min-width: 1024px )  {
+@media (min-width: 1024px )  and (max-height: 1124px)  {
     body {
         display: flex;
         flex-direction: column;
@@ -91,9 +129,16 @@
         max-height: min-content;
         padding: 20px 50px;
     }
+    
+    .data-collect span.porcent{    
+        font-size: 1.2em;    
+        bottom: 63px;
+        right: 20px;
+    }
 
     .data-collect input#custom,
     .data-collect button {
+        font-size: 1em;
         height: 65px;
     }
 
